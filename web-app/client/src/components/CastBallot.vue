@@ -7,14 +7,14 @@
     <input type="radio" id="two" value="Democrat" v-model="picked">
     <label for="two">TBA (Democratic)</label>
     <br>
-    <input type="radio" id="two" value="Green" v-model="picked">
-    <label for="two">TBA (Green Party)</label>
+    <input type="radio" id="three" value="Green" v-model="picked">
+    <label for="three">TBA (Green Party)</label>
     <br>
-    <input type="radio" id="two" value="Independent" v-model="picked">
-    <label for="two">TBA (Independent)</label>
+    <input type="radio" id="four" value="Independent" v-model="picked">
+    <label for="four">TBA (Independent)</label>
     <br>
-    <input type="radio" id="two" value="Libertarian" v-model="picked">
-    <label for="two">TBA (Libertarian)</label>
+    <input type="radio" id="five" value="Libertarian" v-model="picked">
+    <label for="five">TBA (Libertarian)</label>
     <br>
     <br>
     <span v-if="picked">
