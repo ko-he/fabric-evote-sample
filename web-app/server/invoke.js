@@ -11,7 +11,7 @@ const configJSON = fs.readFileSync(configPath, 'utf8');
 const config = JSON.parse(configJSON);
 
 // connect to the connection file
-const ccpPath = path.join(process.cwd(), './ibpConnection.json');
+const ccpPath = path.join(process.cwd(), './local_fabric_connection.json');
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8');
 const connectionProfile = JSON.parse(ccpJSON);
 
@@ -47,7 +47,7 @@ async function queryAll() {
     const network = await gateway.getNetwork('mychannel');
 
     //connect to our insurance contract that has been installed / instantiated on IBM Blockchain Platform
-    const contract = await network.getContract('voteChainDemo'); 
+    const contract = await network.getContract('voterContract'); 
     //submit transaction to the smart contract that is installed / instnatiated on the peers
     console.log('calling contract.evaluateTransaction, with args');
     response = await contract.submitTransaction('queryAll');

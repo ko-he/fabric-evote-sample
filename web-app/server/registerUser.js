@@ -16,7 +16,7 @@ let orgMSPID = config.orgMSPID;
 let gatewayDiscovery = config.gatewayDiscovery;
 
 // const ccpPath = path.join(process.cwd(), './www/blockchain/ibpConnection.json');
-const ccpPath = path.join(process.cwd(), './ibpConnection.json');
+const ccpPath = path.join(process.cwd(), './local_fabric_connection.json');
 const ccpJSON = fs.readFileSync(ccpPath, 'utf8');
 const ccp = JSON.parse(ccpJSON);
 
