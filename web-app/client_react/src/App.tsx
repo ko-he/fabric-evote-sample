@@ -16,7 +16,7 @@ const App: React.FC<AppProps> = _props  => {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/registerVoter">RegisterVoter</Link></li>
-              <li><Link to="/">QueryAll</Link></li>
+              <li><Link to="/query">QueryAll</Link></li>
             </ul>
 
             <AppRouter />
